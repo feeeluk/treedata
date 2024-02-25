@@ -1,0 +1,575 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	color: #666;
+	font-size: 14px;
+	font-family: "Lucida Grande", Arial, sans-serif;
+	font-weight: normal; 
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+p {
+	margin-top: 5;
+}
+
+h1 {
+	font-size: 60px;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: -1px;
+	margin: 0px 0px 20px;
+}
+
+h2 {
+	color: #844fff;
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0px;
+}
+
+table {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+
+a { color: #778fbd; text-decoration: none; }
+a:hover {color:#666;}
+
+#outline {
+	position: relative;
+	height:1500px;
+	width: 900px;
+	margin: 5px auto 0px;
+	padding: 0px;
+	border: solid 1px #999;
+	background:;
+}
+
+#title {
+	position: relative;
+	width: 600px;
+	text-align: right;
+	padding: 0px;
+	margin: 45px 150px 0px;
+	background:;
+}
+
+#userLogin {
+	position: absolute;
+	top: 150px;
+	left: 0px;
+	width: 150px;
+	margin: 10px 10px 0px 30px;
+	padding: 0px;
+	background:;
+}
+
+#userLogin input[type=text], input[type=password] {
+	width: 100px;
+}
+
+#text {
+	top: 150px;
+	left: 190px;
+	width: 660px;
+	position: absolute;
+	margin-top: 10px;
+	margin-right: 50px;
+	padding-left: 0px;
+	padding-right: 0px;
+	background:;
+}
+
+#message {
+	color: red;
+	visibility: visible;
+}
+
+/* ####################################### */
+/* TABLE VIEWS */
+/* ####################################### */
+/* - userView */
+/* - userEdit */
+/* - usersAll */
+/* - siteView */
+/* - siteEdit */
+/* - sitesAll */
+/* - treeView */
+/* - treeEdit */
+/* - siteDetailsSite */
+/* - siteDetailsTrees */
+/* ####################################### */
+
+
+/* ####################################### */
+/* TABLE - userView */
+/* ####################################### */
+
+	table.userView {
+		border: 0px solid #999;
+		margin: 0px;
+		border-spacing: 5px;
+		padding: 0px;
+		text-align: left;
+		vertical-align: middle;
+		width: 90%;
+	}
+
+	table.userView td  {
+		border: 1px solid #999;
+		padding: 0 0 0 5px;
+		text-align: left;
+		vertical-align: middle;
+		background:;
+		height: 21px;
+	}
+
+	table.userView td:nth-child(1) {
+		width: 30%;
+		font-weight: bold;
+		border: 0px;
+	}
+
+	table.userView td:nth-child(2) {
+		width: 40%;
+	}
+
+	table.userView td:nth-child(3) {
+		width: 30%;
+	}
+
+	table.userView tr:last-child td:nth-child(2) {
+		border: 0px;
+	}
+
+/* ####################################### */
+/* TABLE - userEdit */
+/* ####################################### */
+
+	table.userEdit {
+		border: 0px solid #999;
+		margin: 0px;
+		border-spacing: 5px;
+		padding: 0px;
+		text-align: left;
+		vertical-align: middle;
+		width: 90%;
+	}
+
+	table.userEdit td  {
+		border: 1px solid #999;
+		padding: 0 0 0 5px;
+		text-align: left;
+		vertical-align: middle;
+		background:;
+		height: 21px;
+	}
+
+	table.userEdit td:nth-child(1) {
+		width: 30%;
+		font-weight: bold;
+		border: 0px;
+	}
+
+	table.userEdit td:nth-child(2) {
+		width: 40%;
+	}
+
+	table.userEdit td:nth-child(3) {
+		width: 30%;
+	}
+
+	table.userEdit tr:last-child td:last-child {
+		border: 0px;
+	}
+
+	form.userEdit input[type=text] {
+		border: 0px;
+		width: 90%;
+	}
+
+/* ####################################### */
+/* TABLE - usersAll */
+/* ####################################### */
+
+	table.usersAll {
+		border: 0px solid #999;
+		margin: 0px;
+		padding: 0px;
+		border-spacing: 5px;
+		text-align: left;
+		vertical-align: middle;
+		width: 90%;
+	}
+
+	table.usersAll td  {
+		border: 1px solid #999;
+		margin: 0px;
+		padding: 0px 0px 0px 5px;
+		text-align: left;
+		vertical-align: middle;
+		background:;
+		height: 21px;
+	}
+
+	table.usersAll td:nth-child(1) {
+		width: 48%;
+	}
+
+	table.usersAll td:nth-child(2) {
+		width: 12%;
+	}
+
+	table.usersAll td:nth-child(3) {
+		width: 40%;
+		text-align: left;
+		border: 0px;
+	}
+
+/* ####################################### */
+/* TABLE - siteView */
+/* ####################################### */
+
+	table.siteView {
+		border: 0px solid #999;
+		margin: 0px;
+		padding: 0px;
+		border-spacing:5px;
+		text-align: left;
+		vertical-align: middle;
+		width: 90%;
+	}
+
+	table.siteView td  {
+		border: 1px solid #999;
+		margin: 0px;
+		padding: 0px 0px 0px 5px;
+		text-align: left;
+		vertical-align: middle;
+		background:;
+		height: 21px;
+	}
+
+	table.siteView td:nth-child(1) {
+		width: 20%;
+		font-weight: bold;
+		border: 0px;
+	}
+
+	table.siteView td:nth-child(2) {
+		width: 40%;
+	}
+
+	table.siteView td:nth-child(3) {
+		width: 40%;
+		text-align: right;
+		vertical-align: top;
+		border: 0px;
+	}
+
+	table.siteView tr:last-child td:nth-child(2) {
+		border: 0px;
+	}
+
+	table.siteView img {
+		border: 1px solid #999;
+	}
+
+/* ####################################### */
+/* TABLE - siteEdit */
+/* ####################################### */
+
+	table.siteEdit {
+		border: 0px solid #999;
+		margin: 0px;
+		padding: 0px;
+		border-spacing:5px;
+		text-align: left;
+		vertical-align: middle;
+		width: 90%;
+	}
+
+	table.siteEdit td  {
+		border: 1px solid #999;
+		margin: 0px;
+		padding: 0px 0px 0px 5px;
+		text-align: left;
+		vertical-align: middle;
+		background:;
+		height: 21px;
+	}
+
+	table.siteEdit td:nth-child(1) {
+		width: 20%;
+		font-weight: bold;
+		border: 0px;
+	}
+
+	table.siteEdit td:nth-child(2) {
+		width: 40%;
+	}
+
+	table.siteEdit td:nth-child(3) {
+		width: 40%;
+		text-align: right;
+		vertical-align: top;
+		border: 0px;
+	}
+
+	table.siteEdit tr:last-child td:nth-child(2) {
+		border: 0px;
+	}
+
+	table.siteEdit img {
+		border: 1px solid #999;
+	}
+
+	form.siteEdit input[type=text] {
+		border: 0px;
+		width: 90%;
+	}
+
+/* ####################################### */
+/* TABLE - sitesAll */
+/* ####################################### */
+
+	table.sitesAll {
+		border: 0px solid #999;
+		margin: 0px;
+		padding: 0px;
+		border-spacing:5px;
+		text-align: left;
+		vertical-align: middle;
+		width: 90%;
+	}
+
+	table.sitesAll td  {
+		border: 1px solid #999;
+		margin: 0px;
+		padding: 0px 0px 0px 5px;
+		text-align: left;
+		vertical-align: middle;
+		background:;
+		height: 21px;
+	}
+
+	table.sitesAll td:nth-child(1) {
+		width: 40%;
+	}
+
+	table.sitesAll td:nth-child(2) {
+		width: 40%;
+	}
+
+	table.sitesAll td:nth-child(3) {
+		width: 20%;
+		border: 0px;
+	}
+
+/* ####################################### */
+/* TABLE - treeView */
+/* ####################################### */
+
+	table.treeView {
+		border: 0px solid #999;
+		margin: 0px;
+		padding: 0px;
+		border-spacing:5px;
+		text-align: left;
+		vertical-align: middle;
+		width: 90%;
+	}
+
+	table.treeView td  {
+		border: 1px solid #999;
+		margin: 0px;
+		padding: 0px 0px 0px 5px;
+		text-align: left;
+		vertical-align: middle;
+		background:;
+		height: 21px;
+	}
+
+	table.treeView td:nth-child(1) {
+		width: 30%;
+		font-weight: bold;
+		border: 0px;
+	}
+
+	table.treeView td:nth-child(2) {
+		width: 40%;
+	}
+
+	table.treeView td:nth-child(3) {
+		width: 30%;
+		text-align: right;
+		vertical-align: top;
+		border: 0px;
+	}
+
+	table.treeView tr:last-child td:nth-child(2) {
+		border: 0px;
+	}
+
+	table.treeView img {
+		border: 1px solid #999;
+	}
+
+/* ####################################### */
+/* TABLE - treeEdit */
+/* ####################################### */
+
+	table.treeEdit {
+		border: 0px solid #999;
+		margin: 0px;
+		padding: 0px;
+		border-spacing:5px;
+		text-align: left;
+		vertical-align: middle;
+		width: 90%;
+	}
+
+	table.treeEdit td  {
+		border: 1px solid #999;
+		margin: 0px;
+		padding: 0px 0px 0px 5px;
+		text-align: left;
+		vertical-align: middle;
+		background:;
+		height: 21px;
+	}
+
+	table.treeEdit td:nth-child(1) {
+		width: 30%;
+		font-weight: bold;
+		border: 0px;
+	}
+
+	table.treeEdit td:nth-child(2) {
+		width: 40%;
+	}
+
+	table.treeEdit td:nth-child(3) {
+		width: 30%;
+		text-align: right;
+		vertical-align: top;
+		border: 0px;
+	}
+
+	table.treeEdit tr:last-child td:nth-child(2) {
+		border: 0px;
+	}
+
+	table.treeEdit img {
+		border: 1px solid #999;
+	}
+
+	form.treeEdit input[type=text] {
+		border: 0px;
+		width: 90%;
+	}
+
+	form.treeEdit textarea {
+		border: 0px;
+		width: 95%;
+		height: 95%;
+	}
+
+/* ####################################### */
+/* TABLE - siteDetailsSite */
+/* ####################################### */
+
+	table.siteDetailsSite {
+		border: 0px solid #999;
+		margin: 0px;
+		padding: 0px;
+		border-spacing:5px;
+		text-align: left;
+		vertical-align: middle;
+		width: 90%;
+	}
+
+	table.siteDetailsSite td  {
+		border: 1px solid #999;
+		margin: 0px;
+		padding: 0px 0px 0px 5px;
+		text-align: left;
+		vertical-align: middle;
+		background:;
+		height: 21px;
+	}
+
+	table.siteDetailsSite td:nth-child(1) {
+		width: 20%;
+		font-weight: bold;
+		border: 0px;
+	}
+
+	table.siteDetailsSite td:nth-child(2) {
+		width: 40%;
+	}
+
+	table.siteDetailsSite td:nth-child(3) {
+		width: 40%;
+		text-align: right;
+		vertical-align: top;
+		border: 0px;
+	}
+
+	table.siteDetailsSite tr:last-child td:nth-child(2) {
+		border: 0px;
+	}
+
+	table.siteDetailsSite img {
+		border: 1px solid #999;
+	}
+
+
+/* ####################################### */
+/* TABLE - siteDetailsTrees */
+/* ####################################### */
+
+	table.siteDetailsTrees {
+		border: 0px solid #999;
+		margin: 0px;
+		padding: 0px;
+		border-spacing: 5px;
+		text-align: left;
+		vertical-align: middle;
+		width: 90%;
+	}
+
+	table.siteDetailsTrees td  {
+		border: 1px solid #999;
+		margin: 0px;
+		padding: 0px 0px 0px 5px;
+		text-align: left;
+		vertical-align: middle;
+		background:;
+		height: 21px;
+	}
+
+	table.siteDetailsTrees td:nth-child(1) {
+		width: 10%;
+	}
+
+	table.siteDetailsTrees td:nth-child(2) {
+		width: 30%;
+	}
+
+	table.siteDetailsTrees td:nth-child(3) {
+		width: 15%;
+	}
+
+	table.siteDetailsTrees td:nth-child(4) {
+		width: 20%;
+		border: 0px;
+	}
+
+/* ####################################### */
+
+
